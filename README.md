@@ -2,7 +2,7 @@
 
 
 ## step
-1. follow [https://github.com/liwrui/LGRLN/edit/main/README.md] to get and pretreat datasets
+1. follow [] to get and pretreat datasets
 2. train model with:
    + on SumMe:
      ```
