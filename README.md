@@ -1,9 +1,56 @@
 # SpiVG
 
+## Experment
 
-## step
-1. follow [] to get and pretreat datasets
-2. train model with:
+### Initialize project files
++ download this project using git
+  ```
+  git clone https://github.com/liwrui/LGRLN.git
+  ```
++ download datasets to ./data/
+  + download TVsum and SumMe following the steps of
+    ```
+    https://github.com/IntelLabs/GraVi-T/blob/main/docs/GETTING_STARTED_VS.md
+    ```
+  + download VideoXum from
+     ```
+      https://huggingface.co/datasets/jylins/videoxum
+     ```
++ If you want to download model parameters, put them in ./results/
++ the final struture should be:
+  ```
+  |-- LGRLN
+    |-- configs
+      |-- SumMe
+        |-- SPELL_default.yaml
+      |-- TVSum
+        |-- SPELL_default.yaml
+      |-- VideoXum
+        |-- SPELL_default.yaml
+    |-- data
+      |-- annotations
+        |-- SumMe
+          |-- eccv16_dataset_summe_google_pool5.h5
+        |-- TVSum
+          |-- eccv16_dataset_tvsum_google_pool5.h5
+        |-- videoxum
+          |-- blip
+          |-- test_videoxum.json
+          |-- train_videoxum.json
+          |-- val_videoxum.json
+          |-- vt_clipscore
+      |-- graphs
+      |-- generate_temporal_graphs.py
+    |-- gravit
+    |-- results
+      |-- SPELL_VS_SumMe_default
+      |-- SPELL_VS_TVSum_default
+      |-- SPELL_VS_VideXum_default
+    |-- tools
+  ```
+
+
+## train model with:
    + on SumMe:
      ```
      python train.py --cfg configs/video-summarization/SumMe/SPELL_default.yaml --split 4
