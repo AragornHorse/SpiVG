@@ -5,7 +5,7 @@
 ### Initialize project files
 + download this project using git
   ```
-  git clone https://github.com/liwrui/LGRLN.git
+  git clone https://github.com/AragornHorse/SpiVG.git
   ```
 + download datasets to ./data/
   + download TVsum and SumMe following the steps of
@@ -19,7 +19,7 @@
 + If you want to download model parameters, put them in ./results/
 + the final struture should be:
   ```
-  |-- LGRLN
+  |-- SpiVG
     |-- configs
       |-- SumMe
         |-- SPELL_default.yaml
@@ -41,12 +41,11 @@
           |-- vt_clipscore
       |-- graphs
       |-- generate_temporal_graphs.py
-    |-- gravit
     |-- results
       |-- SPELL_VS_SumMe_default
       |-- SPELL_VS_TVSum_default
       |-- SPELL_VS_VideXum_default
-    |-- tools
+    |-- other files
   ```
 
 
